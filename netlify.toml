@@ -1,0 +1,9 @@
+[build]
+  command = "npm install --legacy-peer-deps && cd client && npm run build"
+  publish = "client/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NPM_FLAGS = "--legacy-peer-deps"
+  NETLIFY_USE_PNPM = "false"
+  NETLIFY_USE_YARN = "false"
